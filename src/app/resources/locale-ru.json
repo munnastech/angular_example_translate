@@ -1,0 +1,9 @@
+{
+ "logOFF" : "логин",
+    "login.title.language" : "логин",
+    "login.userName" : "имя пользователя",
+    "login.password" : "пароль",
+     "login.remember" : "Запомни меня",
+    "login.register.now" : "Зарегистрируйтесь сейчас",
+    "login.input.required" : "Это необходимо"
+}
