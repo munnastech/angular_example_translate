@@ -1,0 +1,15 @@
+Angular js gulp seed project
+
+	https://github.com/PauloLuan/angular-gulp-seed
+
+1.	Download ‘angular gulp seed project’ from the google
+
+Run the project
+-----------------
+
+
+2.	npm install -g yo bower grunt-cli gulp
+3.	npm install
+4.	bower install
+5.	gulp serve
+
