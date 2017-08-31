@@ -1,0 +1,13 @@
+{
+"PAGE_TITLE": "ЗАГОЛОВОК СТРАНИЦЫ",
+	"PAGE_CONTENT": "текст",
+	"directives.language-select.Language": "Выберите язык",
+ "personone" : {
+ "greeting" : "Привет, как дела",
+  "resp" : "хорошо"
+ },
+ "persontwo" : {
+ "greeting" : "как насчет тебя",
+ "resp" : "я в порядке"
+ }
+}

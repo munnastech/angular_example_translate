@@ -1,0 +1,14 @@
+{
+"PAGE_TITLE": "angularSeedApp",
+	"PAGE_CONTENT": "text",
+	"directives.language-select.Language": "Select Language",
+ "personone" : {
+ "greeting" : "Hi how are you",
+  "resp" : "good"
+ },
+ "persontwo" : {
+ "greeting" : "what about u",
+ "resp" : "I am fine"
+ }
+
+}

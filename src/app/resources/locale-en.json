@@ -1,9 +1,0 @@
-{
- "logOFF" : "LoGin",
-    "login.title.language" : "Login",
-    "login.userName" : "UserName",
-    "login.password" : "Password",
-    "login.remember" : "Remember me",
-    "login.register.now" : "Register Now",
-    "login.input.required" : "This is required"
-}

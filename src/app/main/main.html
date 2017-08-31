@@ -1,18 +1,8 @@
-<div class="container">
-    <div>
-        <acme-navbar />
-    </div>
-    <div class="jumbotron text-center">
-        <h1>Angular Gulp Seed</h1>
-        <p class="lead">
-            <br> Quickstart project for Angular + Gulp
-        </p>
-    </div>
-    <select class="form-control" ng-change="translate()" ng-model="selectedLanguage">
-        <option value="en">English</option>
-        <option value="no">Norsk</option>
-      </select>
-      <h3>{{"login.title.language" | translate}}</h3>
-		<h3>{{"logOFF" | translate}}</h3>
-		<h3><span translate="logOFF"></span></h3>
-</div>
+
+<div ng-translate-language-select></div>
+<span translate = 'personone.greeting'></span>
+
+<span translate = "persontwo.resp"></span>
+<h3>{{"personone.resp" | translate}}</h3>
+<span translate = "persontwo.greeting"></span>
+<h3>{{"personone.greeting" | translate}}</h3>

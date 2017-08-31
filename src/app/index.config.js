@@ -17,25 +17,37 @@
         toastr.options.progressBar = true;
     };
 
-    angular
-    .module('angularSeedApp').config(function ($translateProvider) {
-        
-        $translateProvider.preferredLanguage(navigator.language);
-        $translateProvider.preferredLanguage('en');
-       // $translateProvider.
-        
-        $translateProvider.registerAvailableLanguageKeys(['en', 'ru'],{
-      	'en-*' : 'en',
-      	'ru-*' : 'ru'
-        });
-        $translateProvider.useStaticFilesLoader({
-          prefix: './resources/locale-',
-          suffix: '.json'
-        });
+
+    // Angular debug info
+       angular
+       .module('angularSeedApp').config(function ($compileProvider, DEBUG_MODE) {
+         if (!DEBUG_MODE) {
+           $compileProvider.debugInfoEnabled(false);// disables AngularJS debug info
+         }
+       })
+       // Angular Translate
+       .config(function ($translateProvider, DEBUG_MODE, LOCALES) {
+         if (DEBUG_MODE) {
+           $translateProvider.useMissingTranslationHandlerLog();// warns about missing translates
+         }
+
+         $translateProvider.useStaticFilesLoader({
+           prefix: '/resources/locale-',
+           suffix: '.json'
+         });
+
+         $translateProvider.preferredLanguage(LOCALES.preferredLocale);
+         $translateProvider.useLocalStorage();
+       })
+       // Angular Dynamic Locale
+       .config(function (tmhDynamicLocaleProvider) {
+         tmhDynamicLocaleProvider.localeLocationPattern('bower_components/angular-i18n/angular-locale_{{locale}}.js');
+       })
+
 
         //$translateProvider.useLocalStorage();
-        $translateProvider.useSanitizeValueStrategy(null);
+       // $translateProvider.useSanitizeValueStrategy(null);
         
-      });
+     
 
 })();
